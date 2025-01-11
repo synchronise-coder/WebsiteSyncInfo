@@ -1,19 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchub - Your Hub for Seamless Connections</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(145deg, #121212, #1a1a1a);
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: radial-gradient(circle, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .hero a {
+            padding: 15px 30px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .hero a:hover {
+            background: #3e8e41;
+        }
+        .features {
+            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .feature h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1rem;
+        }
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Synchub</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>My Website</h1>
-<p>A website created by me.</p>
+    <section class="hero">
+        <h1>Stay Connected, Stay Synchronized</h1>
+        <p>Discover the power of real-time collaboration and secure sharing.</p>
+        <a href="#get-started">Get Started</a>
+    </section>
 
+    <section id="features" class="features">
+        <div class="feature">
+            <h2>Instant Sync</h2>
+            <p>Effortless real-time updates across all your devices.</p>
+        </div>
+        <div class="feature">
+            <h2>Secure File Sharing</h2>
+            <p>Keep your data safe with advanced security protocols.</p>
+        </div>
+        <div class="feature">
+            <h2>Team Collaboration</h2>
+            <p>Work with your team anywhere, anytime.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Synchub. All rights reserved.</p>
+    </footer>
 </body>
 </html>
