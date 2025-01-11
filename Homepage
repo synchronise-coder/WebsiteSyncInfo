@@ -10,16 +10,21 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background: linear-gradient(120deg, #0d0d0d, #1c1c1c, #262626); /* Dark gradient with similar colors */
-            color: white; /* To ensure text is visible on a dark background */
-            background-attachment: fixed; /* Keeps the background static while scrolling */
-            background-size: cover;
+            background: linear-gradient(135deg, #0d0d0d, #111111, #1c1c1c); /* Base gradient */
+            background-size: 300% 300%;
+            animation: gradientShift 15s ease infinite; /* Smooth gradient animation */
+            color: white;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         header {
-            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for header */
-            color: white;
+            background: rgba(0, 0, 0, 0.85); /* Dark header with transparency */
             padding: 15px;
             text-align: center;
+            color: white;
         }
         nav ul {
             list-style: none;
@@ -28,23 +33,17 @@
             justify-content: center;
             gap: 15px;
         }
-        nav ul li {
-            display: inline;
-        }
         nav ul li a {
             text-decoration: none;
             color: white;
             font-weight: bold;
         }
         .hero {
-            text-align: center;
             padding: 50px;
-            background: rgba(0, 0, 0, 0.6); /* Adding overlay for readability */
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Slight overlay for readability */
             border-radius: 10px;
             margin: 20px;
-        }
-        .hero h1 {
-            font-size: 3em;
         }
         .features {
             padding: 20px;
@@ -52,17 +51,17 @@
             justify-content: space-around;
         }
         .feature {
-            text-align: center;
             width: 30%;
-            background: rgba(255, 255, 255, 0.1); /* Subtle card background */
+            text-align: center;
             padding: 15px;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1); /* Subtle box background */
+            border-radius: 10px;
         }
         footer {
-            text-align: center;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.85);
             color: white;
+            text-align: center;
         }
     </style>
 </head>
