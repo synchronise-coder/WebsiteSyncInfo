@@ -1,60 +1,111 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive SellPass-Style Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Product Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 1em;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 1em;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin: 0.5em 0;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            margin: 0.5em 0;
+        }
+
+        .buy-button {
+            padding: 0.7em 1.5em;
+            font-size: 1rem;
+            background: #ff6600;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .buy-button:hover {
+            background: #ff4500;
+        }
+
+        footer {
+            padding: 1em;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-top: 2em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">MyBrand</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="btn nav-btn">Get Started</button>
-        </nav>
+    <header>
+        <h1>Welcome to Our Store</h1>
     </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Discover the Future of Digital Selling</h1>
-            <p>Fast, secure, and beautifully designed online shops.</p>
-            <button class="btn hero-btn">Learn More</button>
+    <div class="container">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product Image">
+            <h2 class="product-title">Product Name</h2>
+            <p class="product-description">A brief description of the product goes here. Highlight its key features and benefits.</p>
+            <p class="price">$29.99</p>
+            <button class="buy-button">Buy Now</button>
         </div>
-        <div class="hero-graphic">
-            <img src="hero-image.svg" alt="Modern digital shop" />
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product Image">
+            <h2 class="product-title">Another Product</h2>
+            <p class="product-description">This is another great product with fantastic features. Don’t miss it!</p>
+            <p class="price">$49.99</p>
+            <button class="buy-button">Buy Now</button>
         </div>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Secure Payments</h3>
-                <p>Experience seamless and safe transactions with ease.</p>
-            </div>
-            <div class="card">
-                <h3>Customization</h3>
-                <p>Tailor your shop’s design to reflect your brand.</p>
-            </div>
-            <div class="card">
-                <h3>Analytics</h3>
-                <p>Track performance and grow your business smarter.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2025 MyBrand. All Rights Reserved.</p>
-        <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 Product Store. All rights reserved.</p>
     </footer>
 </body>
 </html>
