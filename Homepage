@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchub - Connect and Collaborate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(120deg, #0d0d0d, #1c1c1c, #262626); /* Dark gradient with similar colors */
+            color: white; /* To ensure text is visible on a dark background */
+            background-attachment: fixed; /* Keeps the background static while scrolling */
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for header */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.6); /* Adding overlay for readability */
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .features {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .feature {
+            text-align: center;
+            width: 30%;
+            background: rgba(255, 255, 255, 0.1); /* Subtle card background */
+            padding: 15px;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Synchub</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Seamlessly Connect and Collaborate</h1>
+        <p>Experience the future of synchronized collaboration.</p>
+        <a href="#get-started" style="text-decoration:none; padding:10px 20px; background:#4CAF50; color:white;">Get Started</a>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="feature">
+            <h2>Real-Time Synchronization</h2>
+            <p>Keep your data updated across all your devices.</p>
+        </div>
+        <div class="feature">
+            <h2>Secure Sharing</h2>
+            <p>Share files safely and quickly.</p>
+        </div>
+        <div class="feature">
+            <h2>Easy Collaboration</h2>
+            <p>Work together with your team effortlessly.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Synchub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
