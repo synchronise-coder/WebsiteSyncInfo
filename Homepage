@@ -18,7 +18,7 @@
         }
         header {
             display: flex;
-            justify-content: center; /* Center the navigation */
+            justify-content: center;
             align-items: center;
             padding: 20px 50px;
             background: none;
@@ -27,7 +27,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-left: 5%; /* Move the Sync Hub logo further to the left */
+            margin-left: 2%; /* Moved Sync Hub title a lot further to the left */
         }
         .logo img {
             height: 50px;
@@ -35,16 +35,16 @@
         }
         .logo h1 {
             margin: 0;
-            font-size: 1.5rem; /* Smaller font size */
+            font-size: 1.5rem;
             color: #ffffff;
-            font-family: 'Posidon', sans-serif; /* Apply the Posidon font */
+            font-family: 'Posidon', sans-serif;
         }
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 15px; /* Reduced gap between navigation items */
-            justify-content: center; /* Center the navigation items */
+            gap: 15px;
+            justify-content: center;
             margin: 0;
         }
         nav ul li {
@@ -56,15 +56,15 @@
             text-decoration: none;
             font-weight: bold;
             padding: 12px 20px;
-            border-radius: 40px; /* More pronounced curve on borders */
+            border-radius: 40px;
             transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
             display: inline-block;
         }
         nav ul li a:hover {
-            background: #8a2be2; /* Purple background color */
-            color: #fff; /* Text color when hovered */
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.7); /* Purple glow */
-            transform: scale(1.05); /* Slightly increase size on hover */
+            background: #8a2be2;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
+            transform: scale(1.05);
         }
         .hero {
             height: 100vh;
@@ -87,20 +87,20 @@
             color: #ffffff;
         }
         .hero a {
-            padding: 10px 25px; /* Reduced padding for narrower button */
-            background: rgba(94, 42, 132, 0.8); /* Darker purple */
+            padding: 10px 25px; /* Narrower button */
+            background: #6a2e96; /* Darker purple */
             color: white;
             text-decoration: none;
-            font-size: 0.9rem; /* Slightly smaller font size */
-            border-radius: 40px; /* More rounded button */
-            border: 2px solid rgb(234, 0, 255); /* Bright pink border */
-            box-shadow: 0 4px 24px rgb(234, 0, 255); /* Bright pink glow */
+            font-size: 0.9rem; /* Smaller font */
+            border-radius: 40px; /* Rounded button */
+            border: 1px solid rgb(234, 0, 255); /* 1px bright pink border */
+            box-shadow: 0 4px 24px rgb(234, 0, 255); /* Pink glow */
             transition: transform 0.3s;
-            display: inline-block; /* Ensure the button can be centered */
-            margin-top: 20px; /* Add some space above the button */
+            display: inline-block;
+            margin-top: 20px;
         }
         .hero a:hover {
-            transform: scale(1.05); /* Slightly increase size on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
         }
         .features {
             padding: 60px 20px;
@@ -141,7 +141,7 @@
     <header>
         <div class="logo">
             <img src="https://cdn.discordapp.com/attachments/1107081472717893762/1327795249564618834/discotools-xyz-icon.png?ex=67845d30&is=67830bb0&hm=d77a37f471dc898a01cfdfcba73df716e445d7c5502cdf9f59d7a0ea365d0f7e&" alt="Logo">
-            <h1>Sync Hub</h1> <!-- Changed text to "Sync Hub" -->
+            <h1>Sync Hub</h1>
         </div>
         <nav>
             <ul>
@@ -177,7 +177,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Sync Hub. All rights reserved.</p> <!-- Changed to "Sync Hub" -->
+        <p>&copy; 2025 Sync Hub. All rights reserved.</p>
     </footer>
 </body>
 </html>
