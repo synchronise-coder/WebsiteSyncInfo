@@ -160,7 +160,7 @@
             right: -50%; /* Sidebar hidden by default */
             width: 50%; /* Set the sidebar width to 50% */
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+            background-color: rgba(0, 0, 0, 0.9); /* More solid transparency */
             transition: right 0.3s ease;
             padding-top: 60px;
             z-index: 1000;
@@ -169,18 +169,19 @@
             align-items: flex-start; /* Align items to the top */
             text-align: left; /* Set text alignment to left */
             flex-direction: column;
-            padding-left: 20px; /* Add padding to the left */
+            padding-left: 30px; /* Adjust padding from the left */
         }
 
         .sidebar a {
-            padding: 10px 15px;
+            padding: 10px 20px;
             text-decoration: none;
-            font-size: 18px; /* Smaller text size */
+            font-size: 18px; /* Smaller font size */
             color: white;
             display: block;
             transition: background 0.3s;
             font-family: 'Roboto', sans-serif;
             font-weight: bold; /* Make links bold */
+            margin-bottom: 10px; /* Reduced spacing between links */
         }
 
         .sidebar a:hover {
@@ -220,14 +221,14 @@
 
             /* Adjust sidebar items for mobile */
             .sidebar a {
-                font-size: 14px; /* Smaller font size for mobile */
-                padding-left: 0; /* Remove left padding */
-                padding-top: 10px;
+                font-size: 16px; /* Smaller font size for mobile */
+                padding-left: 10px; /* Move the text closer to the left */
+                padding-top: 12px;
             }
 
             .sidebar {
-                width: 60%; /* Reduce width on smaller screens */
-                padding-left: 0; /* Adjust padding */
+                width: 50%; /* Sidebar width on mobile */
+                padding-left: 10px; /* Reduced left padding */
             }
         }
     </style>
