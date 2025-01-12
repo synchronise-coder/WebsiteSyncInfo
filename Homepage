@@ -4,32 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sync Hub - Your Hub for Seamless Connections</title>
-    <link href="https://fonts.googleapis.com/css2?family=Posidon&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background: url('https://cdn.discordapp.com/attachments/1107081472717893762/1327787705752354887/Screenshot_2025-01-11_235408.png?ex=6784562a&is=678304aa&hm=be89db2ba860c87c1704167b79bf2af39bc787b356072d4bd0e75476095bf14a&') no-repeat center center fixed;
+            background: url('background-image.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
-            overflow-x: hidden;
         }
         header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            padding: 20px 50px;
+            padding: 15px;
             background: none;
-            position: relative;
-            flex-wrap: wrap;
-            border-radius: 20px; /* Curvy border */
-            border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
-            margin: 20px;
         }
         .logo {
-            position: absolute;
-            left: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -40,135 +31,76 @@
         }
         .logo h1 {
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #ffffff;
-            font-family: 'Posidon', sans-serif;
-            font-weight: bold;
+        }
+        nav {
+            background: rgba(25, 25, 25, 0.6);
+            padding: 8px 15px;
+            border-radius: 20px;
         }
         nav ul {
             list-style: none;
-            padding: 0;
             display: flex;
             gap: 15px;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        nav ul li {
+            padding: 0;
             margin: 0;
-            position: relative;
         }
         nav ul li a {
-            color: #ffffff;
             text-decoration: none;
-            font-weight: bold;
-            padding: 12px 20px;
-            border-radius: 40px;
-            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-            display: inline-block;
-            border: 1px solid transparent; /* Border for curvy links */
+            color: #ffffff;
+            padding: 8px 14px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
         }
         nav ul li a:hover {
             background: #8a2be2;
-            color: #fff;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
-            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.7);
         }
-
-        /* Curvy border for the navigation links on desktop */
-        @media screen and (min-width: 768px) {
-            nav ul li a {
-                border-radius: 25px; /* Curved links on desktop */
-                border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
-            }
-        }
-
         .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            padding: 20px;
-            background: transparent;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #ffffff;
+            padding: 50px 20px;
         }
         .hero a {
-            padding: 10px 25px;
-            background: rgb(55, 0, 60);
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            border-radius: 25px;
+            background: #23002b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
             border: 1px solid rgb(234, 0, 255);
-            box-shadow: 0 4px 24px rgb(234, 0, 255);
-            transition: transform 0.3s;
+            box-shadow: 0px 4px 24px rgba(234, 0, 255, 1);
+            transition: transform 0.2s;
         }
         .hero a:hover {
             transform: scale(1.05);
         }
-
-        /* Sidebar styles */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            right: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #333;
-            transition: right 0.3s ease;
-            padding-top: 60px;
-            z-index: 1000;
-        }
-        .sidebar a {
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-            transition: background 0.3s;
-        }
-        .sidebar a:hover {
-            background-color: #575757;
-        }
-
-        .sidebar.open {
-            right: 0;
-        }
-
-        .hamburger {
+        .menu-toggle {
             display: none;
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            font-size: 24px;
             cursor: pointer;
-            z-index: 1001;
         }
-        .hamburger div {
-            width: 30px;
-            height: 4px;
-            background-color: white;
-            margin: 6px 0;
-            transition: transform 0.3s ease;
-        }
-
-        /* Media Queries for Responsiveness */
-        @media screen and (max-width: 768px) {
-            nav ul {
-                display: none;
+        @media (max-width: 768px) {
+            header {
+                justify-content: space-between;
             }
-
-            .hamburger {
+            .logo h1 {
+                text-align: center;
+                width: 100%;
+            }
+            nav {
+                display: none;
+                position: absolute;
+                right: 10px;
+                top: 60px;
+                background: rgba(25, 25, 25, 0.9);
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .menu-active {
                 display: block;
             }
         }
@@ -177,63 +109,30 @@
 <body>
     <header>
         <div class="logo">
-            <img src="https://cdn.discordapp.com/attachments/1107081472717893762/1327795249564618834/discotools-xyz-icon.png?ex=67845d30&is=67830bb0&hm=d77a37f471dc898a01cfdfcba73df716e445d7c5502cdf9f59d7a0ea365d0f7e&" alt="Logo">
+            <img src="logo.png" alt="Logo">
             <h1>Sync Hub</h1>
         </div>
-        <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="mobileMenu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#faqs">FAQs</a></li>
             </ul>
         </nav>
-        <div class="hamburger" onclick="toggleSidebar()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
     </header>
-
     <section class="hero">
         <h1>Stay Connected, Stay Synchronized</h1>
         <p>Discover the power of real-time collaboration and secure sharing.</p>
         <a href="#get-started">Get Started</a>
     </section>
-
-    <section class="features">
-        <div class="feature">
-            <h2>Instant Sync</h2>
-            <p>Effortless real-time updates across all your devices.</p>
-        </div>
-        <div class="feature">
-            <h2>Secure File Sharing</h2>
-            <p>Keep your data safe with advanced security protocols.</p>
-        </div>
-        <div class="feature">
-            <h2>Team Collaboration</h2>
-            <p>Work with your team anywhere, anytime.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Sync Hub. All rights reserved.</p>
-    </footer>
-
-    <div class="sidebar" id="sidebar">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">About Us</a>
-        <a href="#">Products</a>
-        <a href="#">Feedback</a>
-        <a href="#">FAQs</a>
-    </div>
-
     <script>
-        function toggleSidebar() {
-            document.getElementById('sidebar').classList.toggle('open');
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('menu-active');
         }
     </script>
 </body>
