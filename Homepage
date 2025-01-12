@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sync Hub - Your Hub for Seamless Connections</title>
-    <link href="https://fonts.googleapis.com/css2?family=Posidon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Posidon&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         html, body {
@@ -171,15 +171,22 @@
             transition: right 0.3s ease;
             padding-top: 60px;
             z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
         }
 
         .sidebar a {
             padding: 10px 15px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 22px;
             color: white;
             display: block;
             transition: background 0.3s;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold; /* Make links bold */
         }
 
         .sidebar a:hover {
