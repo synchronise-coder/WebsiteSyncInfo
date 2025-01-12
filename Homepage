@@ -150,14 +150,7 @@
         }
 
         footer {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.9);
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-            color: #ffffff;
+            display: none; /* Remove footer content */
         }
 
         /* Sidebar styles */
@@ -172,16 +165,17 @@
             padding-top: 60px;
             z-index: 1000;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            justify-content: flex-start; /* Align items to the left */
+            align-items: flex-start; /* Align items to the top */
+            text-align: left; /* Set text alignment to left */
             flex-direction: column;
+            padding-left: 20px; /* Add padding to the left */
         }
 
         .sidebar a {
             padding: 10px 15px;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 18px; /* Smaller text size */
             color: white;
             display: block;
             transition: background 0.3s;
@@ -222,6 +216,18 @@
 
             .hamburger {
                 display: block;
+            }
+
+            /* Adjust sidebar items for mobile */
+            .sidebar a {
+                font-size: 14px; /* Smaller font size for mobile */
+                padding-left: 0; /* Remove left padding */
+                padding-top: 10px;
+            }
+
+            .sidebar {
+                width: 60%; /* Reduce width on smaller screens */
+                padding-left: 0; /* Adjust padding */
             }
         }
     </style>
@@ -269,10 +275,6 @@
             <p>Work with your team anywhere, anytime.</p>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2025 Sync Hub. All rights reserved.</p>
-    </footer>
 
     <div class="sidebar" id="sidebar">
         <a href="#">Home</a>
