@@ -50,15 +50,21 @@
         }
         nav ul li {
             margin: 0;
+            position: relative;
         }
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
+            padding: 10px 20px;
+            border-radius: 30px; /* Rounded edges */
+            transition: background 0.3s, color 0.3s;
+            display: inline-block;
         }
         nav ul li a:hover {
-            color: #4CAF50;
+            background: #4CAF50; /* Background color when hovered */
+            color: #fff; /* Text color when hovered */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add light glow effect */
         }
         .hero {
             height: 100vh;
@@ -139,8 +145,10 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#faqs">FAQs</a></li>
             </ul>
         </nav>
     </header>
