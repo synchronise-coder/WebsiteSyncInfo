@@ -14,20 +14,24 @@
             background-size: cover;
             color: #ffffff;
             overflow-x: hidden;
+            background-color: #000000; /* Make sure the background stays black when scrolling up */
         }
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 20px 50px;
             background: none;
             position: relative;
             flex-wrap: wrap;
+            width: 100%;
         }
         .logo {
             display: flex;
             align-items: center;
             gap: 10px;
+            justify-content: center; /* Center logo and title */
+            flex-direction: column; /* Stack logo and title vertically */
         }
         .logo img {
             height: 40px;
@@ -107,7 +111,7 @@
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
-            background-color: #000000; /* Changed background to black */
+            background-color: #000000; /* Black background for features section */
         }
         .feature {
             background: rgba(255, 255, 255, 0.05);
@@ -188,6 +192,13 @@
 
             .hamburger {
                 display: block;
+            }
+
+            /* Centering the logo and title on mobile */
+            .logo {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
