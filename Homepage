@@ -90,7 +90,7 @@
         }
         .hero a {
             padding: 10px 25px; /* Narrower button */
-            background: #2c1c3e; /* Dark purple */
+            background: rgb(55, 0, 60); /* Dark purple (almost black) with pink undertones */
             color: white;
             text-decoration: none;
             font-size: 0.9rem; /* Smaller font */
