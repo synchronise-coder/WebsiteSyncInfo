@@ -27,8 +27,9 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            margin-left: 0; /* Default margin */
             margin-right: 20px;
-            margin-left: -20px; /* Move the logo slightly to the left */
+            margin-left: calc(50% - 180px); /* Adjust the logo to be more towards the left but not fully */
         }
         .logo img {
             height: 50px;
