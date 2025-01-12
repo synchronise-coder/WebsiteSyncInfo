@@ -18,16 +18,17 @@
         }
         header {
             display: flex;
-            justify-content: center; /* Keep the navigation centered */
             align-items: center;
             padding: 20px 50px;
             background: none;
+            position: relative;
         }
         .logo {
+            position: absolute;
+            left: 20px; /* Move Sync Hub title to the far left */
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-left: -80px; /* Move the Sync Hub logo and title more to the left */
         }
         .logo img {
             height: 40px; /* Smaller logo */
