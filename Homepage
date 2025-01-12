@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synchub - Your Hub for Seamless Connections</title>
+    <title>Sync Hub - Your Hub for Seamless Connections</title>
     <style>
         body {
             margin: 0;
@@ -16,7 +16,7 @@
         }
         header {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding: 20px 50px;
             background: none;
@@ -25,7 +25,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-right: 20px;
+            margin-left: 10%; /* Adjusted to move the group further left */
         }
         .logo img {
             height: 50px;
@@ -36,13 +36,15 @@
             font-size: 2rem;
             color: #ffffff;
         }
+        nav {
+            margin-left: auto;
+        }
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             gap: 30px;
             justify-content: center;
-            margin-left: auto;
         }
         nav ul li {
             margin: 0;
@@ -140,7 +142,7 @@
     </header>
 
     <section class="hero">
-        <h1>Stay Connected, Stay Synchronized</h1>
+        <h1>Stay Connected, Stay Synchronised</h1>
         <p>Discover the power of real-time collaboration and secure sharing.</p>
         <a href="#get-started">Get Started</a>
     </section>
