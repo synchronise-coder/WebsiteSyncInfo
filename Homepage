@@ -27,8 +27,6 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-left: 0; /* Default margin */
-            margin-right: 20px;
             margin-left: calc(50% - 180px); /* Adjust the logo to be more towards the left but not fully */
         }
         .logo img {
@@ -45,7 +43,7 @@
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 30px;
+            gap: 20px; /* Reduced gap between navigation items */
             justify-content: center; /* Center the navigation items */
             margin-left: auto;
             margin-right: auto; /* Ensure centering even with logo */
@@ -91,7 +89,7 @@
         }
         .hero a {
             padding: 15px 30px;
-            background: #5e2a84; /* Dark purple color */
+            background: rgba(94, 42, 132, 0.5); /* Semi-transparent dark purple */
             color: white;
             text-decoration: none;
             font-size: 1rem;
