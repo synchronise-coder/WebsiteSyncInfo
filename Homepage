@@ -17,7 +17,7 @@
         }
         header {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
             background: none;
@@ -25,8 +25,6 @@
             flex-wrap: wrap;
         }
         .logo {
-            position: absolute;
-            left: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -37,7 +35,7 @@
         }
         .logo h1 {
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #ffffff;
             font-family: 'Posidon', sans-serif;
             font-weight: bold;
@@ -48,8 +46,7 @@
             display: flex;
             gap: 15px;
             justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0;
         }
         nav ul li {
             margin: 0;
@@ -110,6 +107,7 @@
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
+            background-color: #000000; /* Changed background to black */
         }
         .feature {
             background: rgba(255, 255, 255, 0.05);
