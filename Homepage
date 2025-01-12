@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synchub - Your Hub for Seamless Connections</title>
+    <title>Sync Hub - Your Hub for Seamless Connections</title>
     <style>
         @font-face {
             font-family: 'PoseidonFont';
-            src: url('path-to-your-font/PoseidonFont.woff2') format('woff2');
+            src: url('PoseidonFont.woff2') format('woff2');
         }
         body {
             margin: 0;
@@ -22,7 +22,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 20px;
         }
         .logo {
             display: flex;
@@ -36,7 +36,7 @@
         }
         .logo h1 {
             font-family: 'PoseidonFont', sans-serif;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin: 0;
             color: #ffffff;
         }
@@ -101,7 +101,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Synchub. All rights reserved.</p>
+        <p>&copy; 2025 Sync Hub. All rights reserved.</p>
     </footer>
 </body>
 </html>
