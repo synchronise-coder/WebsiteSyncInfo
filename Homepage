@@ -138,64 +138,58 @@
             color: #ffffff;
         }
 
-        /* Media Queries for Responsiveness */
-        @media screen and (max-width: 768px) {
-            .logo h1 {
-                font-size: 1rem; /* Smaller title size on smaller screens */
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .hero h1 {
-                font-size: 2rem; /* Adjust hero text size */
-            }
-
-            .hero p {
-                font-size: 1rem; /* Adjust paragraph size */
-            }
-
-            .hero a {
-                padding: 8px 20px; /* Smaller button */
-                font-size: 0.9rem; /* Adjust font size */
-            }
-
-            .features {
-                padding: 30px 20px;
-            }
-
-            .feature {
-                width: 100%; /* Full width for each feature card */
-            }
+        /* Sidebar styles */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            transition: right 0.3s ease;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
         }
 
-        @media screen and (max-width: 480px) {
-            .logo h1 {
-                font-size: 1rem;
+        .sidebar.open {
+            right: 0;
+        }
+
+        .hamburger {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+            transition: transform 0.3s ease;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                display: none;
             }
 
-            .hero h1 {
-                font-size: 1.5rem; /* Even smaller title size on very small screens */
-            }
-
-            .hero p {
-                font-size: 0.9rem;
-            }
-
-            .hero a {
-                padding: 8px 15px; /* Even smaller button */
-                font-size: 0.8rem; /* Adjust font size */
-            }
-
-            .features {
-                padding: 20px 10px;
-            }
-
-            .feature {
-                width: 100%;
-                padding: 10px; /* Adjust padding for smaller screens */
+            .hamburger {
+                display: block;
             }
         }
     </style>
@@ -216,6 +210,11 @@
                 <li><a href="#">FAQs</a></li>
             </ul>
         </nav>
+        <div class="hamburger" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
 
     <section class="hero">
@@ -242,5 +241,20 @@
     <footer>
         <p>&copy; 2025 Sync Hub. All rights reserved.</p>
     </footer>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About Us</a>
+        <a href="#">Products</a>
+        <a href="#">Feedback</a>
+        <a href="#">FAQs</a>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
