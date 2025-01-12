@@ -301,11 +301,6 @@
             <h2>Team Collaboration</h2>
             <p>Work with your team anywhere, anytime.</p>
         </div>
-        <!-- Added Craftwars Section -->
-        <div class="craftwars-feature">
-            <h2>Craftwars</h2>
-            <p>Become a Pro Craftwars today, unleash your power!</p>
-        </div>
     </section>
 
     <div class="sidebar" id="sidebar">
