@@ -93,12 +93,13 @@
             text-decoration: none;
             font-size: 1rem;
             border-radius: 40px; /* More rounded button */
-            transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+            border: 2px solid #ff1493; /* Small bright pink border */
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.7); /* Always glowing bright pink */
+            transition: transform 0.3s;
             display: inline-block; /* Ensure the button can be centered */
             margin-top: 20px; /* Add some space above the button */
         }
         .hero a:hover {
-            box-shadow: 0 0 20px rgba(155, 77, 150, 0.7); /* Light purple glow */
             transform: scale(1.05); /* Slightly increase size on hover */
         }
         .features {
