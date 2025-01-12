@@ -18,7 +18,7 @@
         }
         header {
             display: flex;
-            justify-content: flex-start; /* Align items to the left */
+            justify-content: center; /* Keep the navigation centered */
             align-items: center;
             padding: 20px 50px;
             background: none;
@@ -27,15 +27,15 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-left: 0; /* Move the Sync Hub logo and title completely to the left */
+            margin-left: -50px; /* Move the Sync Hub logo and title more to the left */
         }
         .logo img {
-            height: 50px;
-            width: 50px;
+            height: 40px; /* Smaller logo */
+            width: 40px; /* Smaller logo */
         }
         .logo h1 {
             margin: 0;
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* Smaller Sync Hub title */
             color: #ffffff;
             font-family: 'Posidon', sans-serif;
         }
@@ -45,7 +45,7 @@
             display: flex;
             gap: 15px;
             justify-content: center;
-            margin: 0;
+            margin-left: auto;
         }
         nav ul li {
             margin: 0;
