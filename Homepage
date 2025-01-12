@@ -23,6 +23,9 @@
             background: none;
             position: relative;
             flex-wrap: wrap;
+            border-radius: 20px; /* Curvy border */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+            margin: 20px;
         }
         .logo {
             position: absolute;
@@ -63,6 +66,7 @@
             border-radius: 40px;
             transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
             display: inline-block;
+            border: 1px solid transparent; /* Border for curvy links */
         }
         nav ul li a:hover {
             background: #8a2be2;
@@ -70,6 +74,15 @@
             box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
             transform: scale(1.05);
         }
+
+        /* Curvy border for the navigation links on desktop */
+        @media screen and (min-width: 768px) {
+            nav ul li a {
+                border-radius: 25px; /* Curved links on desktop */
+                border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+            }
+        }
+
         .hero {
             height: 100vh;
             display: flex;
@@ -103,39 +116,6 @@
         }
         .hero a:hover {
             transform: scale(1.05);
-        }
-        .features {
-            padding: 60px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-        .feature {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 10px;
-            width: 280px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        }
-        .feature h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-        .feature p {
-            font-size: 1rem;
-            color: #ffffff;
-        }
-        footer {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.9);
-            text-align: center;
-        }
-        footer p {
-            margin: 0;
-            color: #ffffff;
         }
 
         /* Sidebar styles */
