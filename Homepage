@@ -16,12 +16,22 @@
         }
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             padding: 20px 50px;
             background: none;
         }
-        header h1 {
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 20px;
+        }
+        .logo img {
+            height: 50px;
+            width: 50px;
+        }
+        .logo h1 {
             margin: 0;
             font-size: 2rem;
             color: #ffffff;
@@ -30,7 +40,9 @@
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 20px;
+            gap: 30px;
+            justify-content: center;
+            margin-left: auto;
         }
         nav ul li {
             margin: 0;
@@ -113,7 +125,10 @@
 </head>
 <body>
     <header>
-        <h1>Synchub</h1>
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1107081472717893762/1327795249564618834/discotools-xyz-icon.png?ex=67845d30&is=67830bb0&hm=d77a37f471dc898a01cfdfcba73df716e445d7c5502cdf9f59d7a0ea365d0f7e&" alt="Logo">
+            <h1>Synchub</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
