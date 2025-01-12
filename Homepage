@@ -59,13 +59,13 @@
             font-weight: bold;
             padding: 10px 20px;
             border-radius: 30px; /* Rounded edges */
-            transition: background 0.3s, color 0.3s;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
             display: inline-block;
         }
         nav ul li a:hover {
-            background: #4CAF50; /* Background color when hovered */
+            background: #8a2be2; /* Purple background color */
             color: #fff; /* Text color when hovered */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add light glow effect */
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.7); /* Purple glow */
         }
         .hero {
             height: 100vh;
@@ -89,17 +89,18 @@
         }
         .hero a {
             padding: 15px 30px;
-            background: #4CAF50;
+            background: #5e2a84; /* Dark purple color */
             color: white;
             text-decoration: none;
             font-size: 1rem;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background 0.3s, box-shadow 0.3s;
             display: inline-block; /* Ensure the button can be centered */
             margin-top: 20px; /* Add some space above the button */
         }
         .hero a:hover {
-            background: #3e8e41;
+            background: #9b4d96; /* Lighter purple color */
+            box-shadow: 0 0 20px rgba(155, 77, 150, 0.7); /* Light purple glow */
         }
         .features {
             padding: 60px 20px;
