@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sync Hub - Your Hub for Seamless Connections</title>
-    <!-- Add the link to the "Posidon" font -->
     <link href="https://fonts.googleapis.com/css2?family=Posidon&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,36 +17,37 @@
         }
         header {
             display: flex;
-            justify-content: center; /* Center all content */
+            justify-content: center;
             align-items: center;
             padding: 20px 50px;
             background: none;
             position: relative;
+            flex-wrap: wrap;
         }
         .logo {
             position: absolute;
-            left: 20px; /* Move Sync Hub title to the far left */
+            left: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
         .logo img {
-            height: 40px; /* Smaller logo */
-            width: 40px; /* Smaller logo */
+            height: 40px;
+            width: 40px;
         }
         .logo h1 {
             margin: 0;
-            font-size: 1.2rem; /* Smaller Sync Hub title */
+            font-size: 1.2rem;
             color: #ffffff;
             font-family: 'Posidon', sans-serif;
-            font-weight: bold; /* Make Sync Hub title bold */
+            font-weight: bold;
         }
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             gap: 15px;
-            justify-content: center; /* Center the navigation items */
+            justify-content: center;
             margin-left: auto;
             margin-right: auto;
         }
@@ -91,8 +91,8 @@
             color: #ffffff;
         }
         .hero a {
-            padding: 10px 25px; /* Narrower button */
-            background: rgb(55, 0, 60); /* Dark purple (almost black) with pink undertones */
+            padding: 10px 25px;
+            background: rgb(55, 0, 60);
             color: white;
             text-decoration: none;
             font-size: 1rem;
@@ -136,6 +136,67 @@
         footer p {
             margin: 0;
             color: #ffffff;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .logo h1 {
+                font-size: 1rem; /* Smaller title size on smaller screens */
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2rem; /* Adjust hero text size */
+            }
+
+            .hero p {
+                font-size: 1rem; /* Adjust paragraph size */
+            }
+
+            .hero a {
+                padding: 8px 20px; /* Smaller button */
+                font-size: 0.9rem; /* Adjust font size */
+            }
+
+            .features {
+                padding: 30px 20px;
+            }
+
+            .feature {
+                width: 100%; /* Full width for each feature card */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo h1 {
+                font-size: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem; /* Even smaller title size on very small screens */
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .hero a {
+                padding: 8px 15px; /* Even smaller button */
+                font-size: 0.8rem; /* Adjust font size */
+            }
+
+            .features {
+                padding: 20px 10px;
+            }
+
+            .feature {
+                width: 100%;
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
         }
     </style>
 </head>
