@@ -18,10 +18,10 @@
         }
         header {
             display: flex;
+            justify-content: center; /* Center the logo and navigation */
             align-items: center;
             padding: 20px 50px;
             background: none;
-            justify-content: flex-start; /* Align the header content to the left */
         }
         .logo {
             display: flex;
@@ -44,8 +44,9 @@
             padding: 0;
             display: flex;
             gap: 30px;
-            justify-content: center;
+            justify-content: center; /* Center the navigation items */
             margin-left: auto;
+            margin-right: auto; /* Ensure centering even with logo */
         }
         nav ul li {
             margin: 0;
