@@ -27,7 +27,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-left: calc(50% - 180px); /* Adjust the logo to be more towards the left but not fully */
+            margin-left: 5%; /* Move the Sync Hub logo further to the left */
         }
         .logo img {
             height: 50px;
@@ -43,10 +43,9 @@
             list-style: none;
             padding: 0;
             display: flex;
-            gap: 20px; /* Reduced gap between navigation items */
+            gap: 15px; /* Reduced gap between navigation items */
             justify-content: center; /* Center the navigation items */
-            margin-left: auto;
-            margin-right: auto; /* Ensure centering even with logo */
+            margin: 0;
         }
         nav ul li {
             margin: 0;
@@ -56,8 +55,8 @@
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
-            padding: 12px 30px;
-            border-radius: 40px; /* Make the border curves more pronounced */
+            padding: 12px 20px;
+            border-radius: 40px; /* More pronounced curve on borders */
             transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
             display: inline-block;
         }
@@ -89,7 +88,7 @@
         }
         .hero a {
             padding: 15px 30px;
-            background: rgba(94, 42, 132, 0.5); /* Semi-transparent dark purple */
+            background: rgba(94, 42, 132, 0.8); /* Darker purple */
             color: white;
             text-decoration: none;
             font-size: 1rem;
