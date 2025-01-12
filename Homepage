@@ -89,8 +89,9 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 20px;
+            padding: 10px 20px; /* Reduced padding to move everything up */
             background: transparent;
+            margin-top: -10vh; /* Move everything up a bit */
         }
 
         .hero h1 {
@@ -230,6 +231,11 @@
                 width: 50%; /* Sidebar width on mobile */
                 padding-left: 10px; /* Reduced left padding */
             }
+
+            /* Move hero section text up slightly */
+            .hero {
+                margin-top: -5vh; /* Slightly adjust top margin for mobile */
+            }
         }
     </style>
 </head>
@@ -257,7 +263,7 @@
     </header>
 
     <section class="hero">
-        <h1>Stay Connected, Stay Synchronized</h1>
+        <h1>HELLO MILLIE, GET NAKED</h1>
         <p>Discover the power of real-time collaboration and secure sharing.</p>
         <a href="#get-started">Get Started</a>
     </section>
