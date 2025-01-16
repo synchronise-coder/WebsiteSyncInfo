@@ -18,7 +18,7 @@
         }
 
         body {
-            background: url('https://cdn.discordapp.com/attachments/1107081472717893762/1327787705752354887/Screenshot_2025-01-11_235408.png?ex=6784562a&is=678304aa&hm=be89db2ba860c87c1704167b79bf2af39bc787b356072d4bd0e75476095bf14a&') no-repeat center center fixed;
+            background: url('') no-repeat center center fixed;
             background-size: cover;
         }
 
