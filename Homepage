@@ -11,10 +11,10 @@
             margin: 0;
             padding: 0;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000000; /* Set the background to black */
+            background-color: #000000;
             color: #ffffff;
             overflow-x: hidden;
-            height: 100%; /* Ensure the body takes up the entire screen */
+            height: 100%;
         }
 
         body {
@@ -89,9 +89,9 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 10px 20px; /* Reduced padding to move everything up */
+            padding: 10px 20px;
             background: transparent;
-            margin-top: -10vh; /* Move everything up a bit */
+            margin-top: -10vh;
         }
 
         .hero h1 {
@@ -116,6 +116,7 @@
             border: 1px solid rgb(234, 0, 255);
             box-shadow: 0 4px 24px rgb(234, 0, 255);
             transition: transform 0.3s;
+            display: inline-block;
         }
 
         .hero a:hover {
@@ -151,38 +152,37 @@
         }
 
         footer {
-            display: none; /* Remove footer content */
+            display: none;
         }
 
-        /* Sidebar styles */
         .sidebar {
             position: fixed;
             top: 0;
-            right: -50%; /* Sidebar hidden by default */
-            width: 50%; /* Set the sidebar width to 50% */
+            right: -50%;
+            width: 50%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9); /* More solid transparency */
+            background-color: rgba(0, 0, 0, 0.9);
             transition: right 0.3s ease;
             padding-top: 60px;
             z-index: 1000;
             display: flex;
-            justify-content: flex-start; /* Align items to the left */
-            align-items: flex-start; /* Align items to the top */
-            text-align: left; /* Set text alignment to left */
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
             flex-direction: column;
-            padding-left: 30px; /* Adjust padding from the left */
+            padding-left: 30px;
         }
 
         .sidebar a {
             padding: 10px 20px;
             text-decoration: none;
-            font-size: 18px; /* Smaller font size */
+            font-size: 18px;
             color: white;
             display: block;
             transition: background 0.3s;
             font-family: 'Roboto', sans-serif;
-            font-weight: bold; /* Make links bold */
-            margin-bottom: 10px; /* Reduced spacing between links */
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .sidebar a:hover {
@@ -190,7 +190,7 @@
         }
 
         .sidebar.open {
-            right: 0; /* Move sidebar into view */
+            right: 0;
         }
 
         .hamburger {
@@ -210,7 +210,6 @@
             transition: transform 0.3s ease;
         }
 
-        /* Media Queries for Responsiveness */
         @media screen and (max-width: 768px) {
             nav ul {
                 display: none;
@@ -220,21 +219,19 @@
                 display: block;
             }
 
-            /* Adjust sidebar items for mobile */
             .sidebar a {
-                font-size: 16px; /* Smaller font size for mobile */
-                padding-left: 10px; /* Move the text closer to the left */
+                font-size: 16px;
+                padding-left: 10px;
                 padding-top: 12px;
             }
 
             .sidebar {
-                width: 50%; /* Sidebar width on mobile */
-                padding-left: 10px; /* Reduced left padding */
+                width: 50%;
+                padding-left: 10px;
             }
 
-            /* Move hero section text up slightly */
             .hero {
-                margin-top: -5vh; /* Slightly adjust top margin for mobile */
+                margin-top: -5vh;
             }
         }
     </style>
@@ -265,7 +262,10 @@
     <section class="hero">
         <h1>Welcome to sync hub</h1>
         <p>We are happy to see you here!</p>
-        <a href="https://synchub.info/linkvertise" target="_blank">Get Key</a>
+        <div>
+            <a href="https://synchub.info/linkvertise" target="_blank">Get Key (Linkvertise)</a>
+            <a href="https://synchub.info/lootlabs" target="_blank" style="margin-left: 10px;">Get Key (Lootlabs)</a>
+        </div>
     </section>
 
     <section class="features">
