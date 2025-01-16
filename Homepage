@@ -18,7 +18,7 @@
         }
 
         body {
-            background: url('https://ak.picdn.net/shutterstock/videos/1034137475/thumb/1.jpg?ip=x480') no-repeat center center fixed;
+            background: url('https://static.nodetoy.co/web/resources/hero_background__large.png') no-repeat center center fixed;
             background-size: cover;
         }
 
