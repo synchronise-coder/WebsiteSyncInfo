@@ -18,7 +18,7 @@
         }
 
         body {
-            background: url('https://www.bing.com/images/blob?bcid=RHwBRAPPFf4HqxcxoNWLuD9SqbotqVTdP4o') no-repeat center center fixed;
+            background: url('https://media.discordapp.net/attachments/1329461883387904102/1329959791010779196/Screenshot202025-01-1120235408.png?ex=678c3d13&is=678aeb93&hm=21851d4856c10e082644aa5b64be57faccf248c8f5a5397cdbdbcf1c233ef76d&=&format=webp&quality=lossless&width=550&height=263') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -239,7 +239,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="https://www.bing.com/images/blob?bcid=RKVPjPsIUv0HqxcxoNWLuD9SqbotqVTdPy8" alt="Logo">
+            <img src="https://media.discordapp.net/attachments/1329461883387904102/1329959977271562292/discotools-xyz-icon_2.png?ex=678c3d40&is=678aebc0&hm=a767f6b930061ef35c12dbfa968303b11b389c073fdd8b5ccee2b81979558dcf&=&format=webp&quality=lossless" alt="Logo">
             <h1>Sync Hub</h1>
         </div>
         <nav>
