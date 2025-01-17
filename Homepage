@@ -18,7 +18,7 @@
         }
 
         body {
-            background: url('https://www.bing.com/images/blob?bcid=RHwBRAPPFf0HqxcxoNWLuD9SqbotqVTdPy8') no-repeat center center fixed;
+            background: url('https://www.bing.com/images/blob?bcid=RHwBRAPPFf4HqxcxoNWLuD9SqbotqVTdP4o') no-repeat center center fixed;
             background-size: cover;
         }
 
