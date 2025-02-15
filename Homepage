@@ -18,7 +18,7 @@
         }
 
         body {
-            background: url('https://media.discordapp.net/attachments/1329461883387904102/1329959791010779196/Screenshot202025-01-1120235408.png?ex=678c3d13&is=678aeb93&hm=21851d4856c10e082644aa5b64be57faccf248c8f5a5397cdbdbcf1c233ef76d&=&format=webp&quality=lossless&width=550&height=263') no-repeat center center fixed;
+            background: url('https://i.postimg.cc/nj9ctwNC/Screenshot-2025-02-15-144533.png') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -57,6 +57,24 @@
             margin-bottom: 10px;
             color: #ffffff;
         }
+
+        .hero a {
+            padding: 10px 25px;
+            background: rgb(55, 0, 60);
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 25px;
+            border: 1px solid rgb(234, 0, 255);
+            box-shadow: 0 4px 24px rgb(234, 0, 255);
+            transition: transform 0.3s;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .hero a:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -65,5 +83,14 @@
             <h1>Sync Hub</h1>
         </div>
     </header>
+
+    <section class="hero">
+        <h1>Welcome to Sync Hub</h1>
+        <p>We are happy to see you here!</p>
+        <div>
+            <a href="https://synchub.info/linkvertise" target="_blank">Get Key (Linkvertise)</a>
+            <a href="https://synchub.info/lootlabs" target="_blank">Get Key (Lootlabs)</a>
+        </div>
+    </section>
 </body>
 </html>
