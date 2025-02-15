@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=\device-width, initial-scale=1.0">
     <title>Cool script for cool people</title>
     <link href="https://fonts.googleapis.com/css2?family=Posidon&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -32,54 +32,12 @@
             flex-wrap: wrap;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo img {
-            height: 40px;
-            width: 40px;
-        }
-
         .logo h1 {
             margin: 0;
             font-size: 1.5rem;
             color: #ffffff;
             font-family: 'Posidon', sans-serif;
             font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 0;
-            position: relative;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 12px 20px;
-            border-radius: 40px;
-            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
-            display: inline-block;
-        }
-
-        nav ul li a:hover {
-            background: #8a2be2;
-            color: #fff;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
-            transform: scale(1.05);
         }
 
         .hero {
@@ -99,203 +57,13 @@
             margin-bottom: 10px;
             color: #ffffff;
         }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #ffffff;
-        }
-
-        .hero a {
-            padding: 10px 25px;
-            background: rgb(55, 0, 60);
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            border-radius: 25px;
-            border: 1px solid rgb(234, 0, 255);
-            box-shadow: 0 4px 24px rgb(234, 0, 255);
-            transition: transform 0.3s;
-            display: inline-block;
-        }
-
-        .hero a:hover {
-            transform: scale(1.05);
-        }
-
-        .features {
-            padding: 60px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-
-        .feature {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 10px;
-            width: 280px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-        }
-
-        .feature h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-
-        .feature p {
-            font-size: 1rem;
-            color: #ffffff;
-        }
-
-        footer {
-            display: none;
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 0;
-            right: -50%;
-            width: 50%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            transition: right 0.3s ease;
-            padding-top: 60px;
-            z-index: 1000;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            text-align: left;
-            flex-direction: column;
-            padding-left: 30px;
-        }
-
-        .sidebar a {
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-            transition: background 0.3s;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .sidebar a:hover {
-            background-color: #575757;
-        }
-
-        .sidebar.open {
-            right: 0;
-        }
-
-        .hamburger {
-            display: none;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .hamburger div {
-            width: 30px;
-            height: 4px;
-            background-color: white;
-            margin: 6px 0;
-            transition: transform 0.3s ease;
-        }
-
-        @media screen and (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-
-            .hamburger {
-                display: block;
-            }
-
-            .sidebar a {
-                font-size: 16px;
-                padding-left: 10px;
-                padding-top: 12px;
-            }
-
-            .sidebar {
-                width: 50%;
-                padding-left: 10px;
-            }
-
-            .hero {
-                margin-top: -5vh;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="https://media.discordapp.net/attachments/1329461883387904102/1329959977271562292/discotools-xyz-icon_2.png?ex=678c3d40&is=678aebc0&hm=a767f6b930061ef35c12dbfa968303b11b389c073fdd8b5ccee2b81979558dcf&=&format=webp&quality=lossless" alt="Logo">
             <h1>Sync Hub</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Feedback</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger" onclick="toggleSidebar()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
     </header>
-
-    <section class="hero">
-        <h1>Welcome to sync hub</h1>
-        <p>We are happy to see you here!</p>
-        <div>
-            <a href="https://synchub.info/linkvertise" target="_blank">Get Key (Linkvertise)</a>
-            <a href="https://synchub.info/lootlabs" target="_blank" style="margin-left: 10px;">Get Key (Lootlabs)</a>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="feature">
-            <h2>Instant Sync</h2>
-            <p>Effortless real-time updates across all your devices.</p>
-        </div>
-        <div class="feature">
-            <h2>Secure File Sharing</h2>
-            <p>Keep your data safe with advanced security protocols.</p>
-        </div>
-        <div class="feature">
-            <h2>Team Collaboration</h2>
-            <p>Work with your team anywhere, anytime.</p>
-        </div>
-    </section>
-
-    <div class="sidebar" id="sidebar">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">About Us</a>
-        <a href="#">Products</a>
-        <a href="#">Feedback</a>
-        <a href="#">FAQs</a>
-    </div>
-
-    <script>
-        function toggleSidebar() {
-            document.getElementById('sidebar').classList.toggle('open');
-        }
-    </script>
 </body>
 </html>
