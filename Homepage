@@ -80,12 +80,12 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Sync Hub</h1>
+            <h1>Sync/Alt Gen</h1>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Welcome to Sync Hub</h1>
+        <h1>Welcome to Sync/Alt Gen</h1>
         <p>We are happy to see you here!</p>
         <div>
             <a href="https://synchub.info/linkvertise" target="_blank">Get Key (Linkvertise)</a>
